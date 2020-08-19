@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="website-logo" src="/public/images/logo.png" alt="website logo spelling what's cookin puddin?">
+        <nav>
+            <img class="tomato-placeholder"src="/public/images/tomato.png" alt="tomato-image">
+            <button class="addRecipeButton" id="addRecipeButton">Add a Recipe</button>
+            <button class="goToRecipeButton" id="goToRecipeButton">Show Recipes</button>
+        </nav>
+    </header>
+    <main>
+        <form id="input-form" action="/submit" method="POST" class="hidden">
+            <input type="text" name="recipe_name" placeholder="recipe_name" required>
+            <input type="text" name="ingredients" placeholder="ingredients" required>
+            <input type="text" name="time" placeholder="time" required>
+            <textarea name="method" placeholder="method" required></textarea>
+            <input type="text" name="author" placeholder="author" required>
+            <button type="reset">Reset</button>
+            <button type="submit">Upload recipe</button>
+        </form>  
+        <ul id="recipe-list" class="hidden"><!-- recipe-placeholder --></ul>
+    </main>
+    <script src="/public/main.js"></script>
+</body>
+</html>
