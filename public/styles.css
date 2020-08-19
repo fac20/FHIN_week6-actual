@@ -1,0 +1,79 @@
+* {
+    /* font-size: 16px; */
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: hsl(36, 100%, 90%);
+    font-family: 'Crimson Text', serif;
+}
+.website-logo {
+    width: 25rem;
+}
+
+.tomato-placeholder {
+    width: 35rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* pleases stile the list proeprties are below: */
+
+li {
+    text-align: center;
+}
+
+.label {
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+
+}
+
+.description {
+    font-size: 2rem;
+
+}
+
+nav {
+    position: relative;
+}
+
+.goToRecipeButton {
+    position: absolute;
+    top: 20rem;
+    left: 5rem;
+    font-size: 2rem;
+
+}
+
+.addRecipeButton {
+    position: absolute;
+    top: 20rem;
+    right: 5rem;
+    font-size: 2rem;
+}
+
+
+@media only screen and (max-width: 400px) {
+    .website-logo {
+        width: 20rem;
+    }
+    
+    .tomato-placeholder {
+        width: 22rem;
+    }
+
+    .goToRecipeButton {
+        font-size: 1.2rem;
+        top: 35%;
+        left: 35%;
+    }
+    
+    .addRecipeButton {
+        font-size: 1.2rem;
+        top: 55%;
+        left: 35%;
+    }
+}
+
