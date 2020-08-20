@@ -20,10 +20,10 @@
 
     <!-- This form is here just incase we decide to hide the form and then reveal on the same page. -->
     
-    <form id="userSignUp" class="hidden" action="" method="POST">
+    <form id="userSignUp" class="hidden" action="/signup" method="POST">
         <h1>Sign Up</h1>
         <label for="email">Email<span aria-hidden="true">*</span></label>
-        <input type="email" id="email" placeholder="Enter your email" required>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
         <label for="password">Password<span aria-hidden="true">*</span></label>
         <div id="passwordReq"> Password must contain at least 8 characters and 1 number</div>
         <input type="password" id="password" aria-describedby="passwordReq" placeholder="Enter secure password" minlength="8" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
@@ -31,5 +31,5 @@
     </form>
     
 </body>
-<script src="/public/main.js"></script>
+<script src="/public/form.js"></script>
 </html>
