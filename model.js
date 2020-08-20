@@ -22,7 +22,7 @@ function getRecipes() {
     })
 };
 
-function createUser(users) {
+function createUser(data) {
     const values = [
         data.email,
         data.password,
@@ -32,6 +32,5 @@ function createUser(users) {
         values,
     )
 };
-
 
 module.exports = { createNewRecipe, getRecipes, createUser };
