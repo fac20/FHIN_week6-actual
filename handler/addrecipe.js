@@ -11,7 +11,6 @@ function addRecipe(request, response) {
 
     request.on("end", () => {
         const object = querystring.parse(body);
-        console.log(object);
         database.createNewRecipe(object);
         response.writeHead(302, {location: "/"})
         response.end();

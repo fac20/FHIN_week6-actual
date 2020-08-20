@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/fac20/week5-FHIN#readme",
   "dependencies": {
+    "bcrypt": "^5.0.0",
     "dotenv": "^8.2.0",
     "nodemon": "^2.0.4",
     "pg": "^8.3.2"

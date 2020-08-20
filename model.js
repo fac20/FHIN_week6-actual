@@ -22,5 +22,16 @@ function getRecipes() {
     })
 };
 
+function createUser(users) {
+    const values = [
+        data.email,
+        data.password,
+    ]
+    return db.query(
+        `INSERT INTO users(email, password) VALUES($1, $2)`, 
+        values,
+    )
+};
 
-module.exports = { createNewRecipe, getRecipes };
+
+module.exports = { createNewRecipe, getRecipes, createUser };
