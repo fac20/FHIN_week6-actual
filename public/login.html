@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+</head>
+<body>
+    <form id="userLogin" action="" method="POST">
+        <h1>Log in</h1>
+        <label for="email">Email<span aria-hidden="true">*</span></label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <label for="password">Password<span aria-hidden="true">*</span></label>
+        <input type="password" id="password" minlength="8" placeholder="Enter your password" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- This form is here just incase we decide to hide the form and then reveal on the same page. -->
+    
+    <!-- <form id="userSignUp" action="" method="POST">
+        <h1>Sign Up</h1>
+        <label for="email">Email<span aria-hidden="true">*</span></label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <label for="password">Password<span aria-hidden="true">*</span></label>
+        <div id="passwordReq"> Password must contain at least 8 characters and 1 number</div>
+        <input type="password" id="password" aria-describedby="passwordReq" placeholder="Enter secure password" minlength="8" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
+        <button type="submit">Sign Up</button>
+    </form>
+     -->
+</body>
+</html>
