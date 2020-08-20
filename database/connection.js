@@ -10,15 +10,8 @@ if (!dataBaseURL) {
   };
 
 const options = {
-<<<<<<< HEAD
-    connectionString: dataBaseURL
-||||||| 9061910
-    connectionString: dataBaseURL,
-    ssl: { rejectUnauthorized: false },
-=======
     connectionString: dataBaseURL,
     // ssl: { rejectUnauthorized: false },
->>>>>>> master
   };
 const db = new pg.Pool(options);
 
