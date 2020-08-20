@@ -5,6 +5,7 @@
     align-self: center;
     background-color: hsl(36, 100%, 90%);
     font-family: 'Crimson Text', serif;
+
 }
 .website-logo {
     width: 25rem;
@@ -52,6 +53,11 @@ nav {
     top: 20rem;
     right: 5rem;
     font-size: 2rem;
+}
+
+#signUpButton {
+    margin-top: 1.2rem;
+    background-color: hsl(35, 39%, 63%);
 }
 
 
