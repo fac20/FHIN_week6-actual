@@ -1,5 +1,6 @@
 const db = require("./database/connection");
 
+
 function createNewRecipe(data) {
     const values = [
         data.recipe_name,
@@ -33,5 +34,11 @@ function createUser(users) {
     )
 };
 
+function getUser(email) {
+    return db
+    .query(`SELECT * FROM users WHERE email = ${email}`)
+    .then(result => result.rows)
+};
 
-module.exports = { createNewRecipe, getRecipes, createUser };
+
+module.exports = { createNewRecipe, getRecipes, createUser, getUser };
