@@ -2,9 +2,9 @@ const bcrypt = require("bcrypt");
 const database = require("../model");
 const jwt = require("jsonwebtoken");
 const cookie = require("cookie");
+const secret =process.env.SECRET;
 const dotenv = require("dotenv");
-const SECRET = "asdfghjklzxcvbnmqwertyuio!@3456"
-const missingHandler = require("./missing");
+dotenv.config();
 
 function signupHandler(request, response) {
     let body = "";
@@ -18,7 +18,7 @@ function signupHandler(request, response) {
         console.log("Data: ", email, password);
         bcrypt
          .genSalt(10)
-         .then(salt => bcrypt.hash(SECRET, salt))
+         .then(salt => bcrypt.hash(secret, salt))
          .then(hash => database.createUser({ email, password: hash }))
          .then(() => {
           response.writeHead(302, { 'Location': '/' });
