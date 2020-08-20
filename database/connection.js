@@ -10,8 +10,7 @@ if (!dataBaseURL) {
   };
 
 const options = {
-    connectionString: dataBaseURL,
-    ssl: { rejectUnauthorized: false },
+    connectionString: dataBaseURL
   };
 const db = new pg.Pool(options);
 
