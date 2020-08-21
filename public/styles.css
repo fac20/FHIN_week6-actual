@@ -54,6 +54,11 @@ nav {
     font-size: 2rem;
 }
 
+#signUpButton {
+    margin-top: 1.2rem;
+    background-color: hsl(35, 39%, 63%);
+}
+
 
 @media only screen and (max-width: 400px) {
     .website-logo {
