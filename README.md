@@ -28,9 +28,11 @@ Set up node modules:
 
 ```
 $ npm install
-Move into psql:
 
 ```
+
+Go into psql:
+
 
 
 ```
