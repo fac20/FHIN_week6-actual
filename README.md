@@ -19,7 +19,6 @@ Due to all the error and bugs that were rectified during last week project we de
 
 Clone the repo
 
-Create .env file (please request database URL from us)
 
 ``` 
 npm install
@@ -40,8 +39,8 @@ Our database has two tables that are referencing each other on user id.
 | Column     | Type                                              | Constraints |
 | ---------- | ------------------------------------------------- | ----------- |
 | id         | SERIAL (translates to integer and AUTO_INCREMENT) | PRIMARY KEY |
-| username   | VARCHAR(255)                                      | NOT NULL    |
-| location   | VARCHAR(255)                                      |
+| password   | VARCHAR(255)                                      | NOT NULL    |
+| email      | VARCHAR(255)                                      | NOT NULL
 
 
 #### Recipes
