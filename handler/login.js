@@ -15,7 +15,9 @@ function loginHandler(request, response) {
                 const password = data.get("password");
                 const cookie = sign(email, secret);
                 database.getUser(email) //-> getting hashed password from db
+                .then(dbUser => console.log(dbUser))
                 .then(dbUser => bcrypt.compare(password, dbUser.password)) //
+                
                 .then(result => {
                     if (!result) throw new Error("Password mismatch"); 
                     response.writeHead(302, 
