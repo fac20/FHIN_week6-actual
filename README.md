@@ -63,20 +63,21 @@ A 1.5 day project, with half a day spent on computer bugs :bug: :bug:
 
 ## Tools
 
-- Heroku, not so well apparently 🤪
+- Heroku
 - npm modules - bcrypt/cookies/jwt.sign 
-- Coffee ☕️☕️☕️
+- vscode
+- Git
 
 
 
 ## 🦄 The dream team 🦄
 
-🌟 [Lisa](https://github.com/LiCern) - Scrum facilitator
+🌟 [Lisa](https://github.com/LiCern) - Quality
 
-🌟 [Rihards](https://github.com/RihardsJ) - Quality control
+🌟 [Rihards](https://github.com/RihardsJ) - Deployment
 
-🌟 [Jihyun](https://github.com/Jihyun-Janghttps://github.com/Jihyun-Jang) - Deployment
+🌟 [Jihyun](https://github.com/Jihyun-Janghttps://github.com/Jihyun-Jang) - Design
 
-🌟 [Terry](https://github.com/RunGT) - Design
+🌟 [Terry](https://github.com/RunGT) - Scrum facilitator
 
 ![Dream Team](https://media.giphy.com/media/Q7vMieVa8cK0FgKqlr/giphy.gif)
