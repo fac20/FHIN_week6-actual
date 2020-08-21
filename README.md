@@ -17,17 +17,52 @@ Due to all the error and bugs that were rectified during last week project we de
 
 ## To run our app
 
-Clone the repo
+
+Clone
+
+Git clone this repo to your local machine
+
+Setup
+Set up node modules:
 
 
-``` 
-npm install
-node server.js 
+```
+$ npm install
+Move into psql:
+
 ```
 
-Go to localhost3000
 
-Have fun!!! 🥳🥳🥳
+```
+$ psql
+
+```
+
+Create database locally:
+
+```
+$ CREATE USER myuser SUPERUSER PASSWORD 'mypassword';
+$ CREATE DATABASE database-name WITH OWNER myuser;
+
+```
+
+Create .env file in project:
+
+
+```
+
+Add DATABASE_URL variable in your .env file and assign to initialised database
+Add SECRET variable in your .env file (SECRET can just be a random string)
+
+```
+Database file should look like this:
+
+
+```
+postgres://myuser:mypassword@localhost:5432/database-name
+
+```
+
 
 
 ## Schema Info
