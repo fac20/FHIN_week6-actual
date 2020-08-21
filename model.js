@@ -23,7 +23,7 @@ function getRecipes() {
     })
 };
 
-function createUser(users) {
+function createUser(data) {
     const values = [
         data.email,
         data.password,
